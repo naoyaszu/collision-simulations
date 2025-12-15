@@ -110,4 +110,8 @@ Jalankan program:
 ##Tampilan
 
 1. Brute Force
+ ![brute force](images/bruteforce.png)
+
+2. Quad Tree 
+ ![quadtree](images/quadtree.png)
 
