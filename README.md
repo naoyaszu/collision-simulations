@@ -107,7 +107,7 @@ Jalankan program:
 ```
 ---
 
-##Tampilan
+## Tampilan
 
 1. Brute Force
  ![brute force](images/bruteforce.png)
