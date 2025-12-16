@@ -23,19 +23,7 @@ Metode brute force bekerja dengan cara **mengecek semua pasangan bola** satu per
 
 Jika terdapat (n) bola, maka jumlah pengecekan tabrakan adalah:
 
-[
-\frac{n(n-1)}{2}
-]
-
-**Kelebihan:**
-
-* Implementasi sederhana
-* Mudah dipahami
-
-**Kekurangan:**
-
-* Tidak efisien untuk jumlah bola besar
-* Kompleksitas waktu (O(n^2))
+$\frac{n(n-1)}{2}$
 
 Metode ini cocok untuk simulasi dengan jumlah objek yang sedikit.
 
@@ -43,22 +31,8 @@ Metode ini cocok untuk simulasi dengan jumlah objek yang sedikit.
 
 ### 2. Quadtree Collision Detection
 
-Quadtree adalah struktur data pohon yang membagi ruang 2D menjadi empat bagian secara rekursif. Setiap node quadtree menyimpan objek (bola) yang berada dalam wilayah tersebut.
-
-Pada metode ini:
-
-* Bola dimasukkan ke dalam quadtree berdasarkan posisinya
-* Untuk setiap bola, pencarian tabrakan hanya dilakukan pada bola-bola di area sekitarnya
-
-**Kelebihan:**
-
-* Lebih efisien untuk jumlah bola besar
-* Mengurangi jumlah pengecekan yang tidak perlu
-* Kompleksitas mendekati (O(n \log n))
-
-**Kekurangan:**
-
-* Implementasi lebih kompleks
+Quadtree adalah struktur data pohon yang membagi ruang 2D menjadi empat bagian secara rekursif. Setiap node quadtree menyimpan objek (bola) yang berada dalam wilayah tersebut. Pada metode ini, bola dimasukkan ke dalam quadtree berdasarkan posisinya. Untuk setiap bola, pencarian tabrakan hanya dilakukan pada bola-bola di area sekitarnya. Metode efisien untuk simulasi dengan jumlah objek yang banyak.
+Kompleksitas metode ini mendekati $O(n \log n)$.
 
 ---
 
@@ -96,14 +70,14 @@ Pada metode ini:
 Pastikan SFML sudah terinstal, kemudian jalankan perintah berikut:
 
 ```bash
-g++ collision_simulation.cpp -o collision_simulation \
+g++ collision.cpp -o collision \
     -lsfml-graphics -lsfml-window -lsfml-system
 ```
 
 Jalankan program:
 
 ```bash
-./collision_simulation
+./collision
 ```
 ---
 
@@ -114,4 +88,7 @@ Jalankan program:
 
 2. Quad Tree 
  ![quadtree](images/quadtree.png)
+
+
+https://github.com/user-attachments/assets/241438e1-c08c-41e6-bf54-bceea1ea3c12
 
