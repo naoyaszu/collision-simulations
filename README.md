@@ -40,19 +40,19 @@ Kompleksitas metode ini mendekati $O(n \log n)$.
 
 ### Komponen Utama
 
-1. **Ball**
+1. **Ball**\
    Menyimpan data bola seperti posisi, kecepatan, radius, massa, dan warna.
 
-2. **AABB (Axis-Aligned Bounding Box)**
+2. **AABB (Axis-Aligned Bounding Box)**\
    Digunakan sebagai batas wilayah pada quadtree dan untuk proses pencarian kandidat tabrakan.
 
-3. **Quadtree**
+3. **Quadtree**\
    Struktur data untuk menyimpan bola berdasarkan pembagian ruang.
 
-4. **resolveCollision()**
+4. **resolveCollision()**\
    Fungsi *narrow phase* yang menangani fisika pantulan bola secara elastis.
 
-5. **main()**
+5. **main()**\
    Mengatur inisialisasi bola, loop simulasi, pemilihan metode collision detection, dan rendering.
 
 ---
